@@ -1,0 +1,119 @@
+                           /* BASIC STYLING HERE */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+    background-color: rgb(179, 119, 235); 
+} 
+.main{
+    background-color: white;
+    width: 350px;
+    height: 360px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius:10px;
+}
+.todolist{
+   background-color: white;
+   width: 400px;
+   height: 400px;
+}
+.todolist input{
+    outline: none;
+    padding: 10px;
+    border: none;
+
+}
+.todolist button{
+    padding: 10px;
+
+}
+.head .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+   border-bottom: 2px solid white;
+   padding: 20px;
+}
+.enter-task{
+    padding: 15px;
+    /* border-bottom: 2px solid grey; */
+    /* width: 20px; */
+}
+.enter-task > input{
+
+    width: 230px;
+    height: 40px;
+    border:none;
+    outline: none;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+
+}
+.enter-task i{
+  padding: 10px;
+  color: rgb(199, 152, 243);
+  cursor: pointer;
+}
+
+                                  /* SUBBODY STYLING START HERE */
+.listcontainer{
+      overflow-y: auto ;
+      height: 290px;
+      
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid grey;
+}
+.icon i{
+    padding: 5px;
+    cursor: pointer;
+}
+.task{
+   width:200px;
+   text-align: center;
+   align-items: center;
+}
+.icon{
+    width:80px ;
+}
+
+                                            /* RESPONSIVE DEVICES */
+
+@media screen and (max-width:390px) {
+    .main{
+        background-color: white;
+        width: 250px;
+        height: 360px;
+    }
+    .enter-task > input{
+        width: 140px;
+        height: 40px;
+    }  
+    .icon{
+        width: 60px ;
+    }
+    .task{
+        width:140px;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+     }
+
+}
+
+
+
